@@ -1,0 +1,30 @@
+.features {
+  @extend %section;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+}
+
+.title {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+
+  &--black {
+    color: var(--secondary-txt-cl);
+  }
+}
+
+.features__iconfill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}

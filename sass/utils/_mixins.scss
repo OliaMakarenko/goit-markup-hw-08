@@ -1,0 +1,12 @@
+@mixin button($dis, $mr, $ml, $mw, $br, $bsh, $bor, $bc, $cur, $trans) {
+  display: $dis;
+  margin-right: $mr;
+  margin-left: $ml;
+  min-width: $mw;
+  border-radius: $br;
+  box-shadow: $bsh;
+  border: $bor;
+  background-color: $bc;
+  cursor: $cur;
+  transition: $trans;
+}

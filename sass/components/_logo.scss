@@ -1,0 +1,24 @@
+.logo {
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo__footer {
+  display: inline-flex;
+  margin-bottom: 20px;
+  color: var(--white-txt-cl);
+
+  &--accent {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.header__logo {
+  color: var(--dark-txt-cl);
+
+  &--accent {
+    color: var(--accent-txt-cl);
+  }
+}

@@ -1,0 +1,11 @@
+.address {
+  font-style: normal;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  color: var(--white-txt-cl);
+}

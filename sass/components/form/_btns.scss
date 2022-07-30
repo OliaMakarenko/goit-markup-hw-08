@@ -1,0 +1,29 @@
+.form-btn {
+  @include button(
+    block,
+    auto,
+    auto,
+    200px,
+    4px,
+    0px 4px 4px rgba(0, 0, 0, 0.15),
+    transparent,
+    var(--btn-cl),
+    pointer,
+    background-color var(--anim)
+  );
+
+  padding: 10px 52px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--white-txt-cl);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-active-cl);
+  }
+}

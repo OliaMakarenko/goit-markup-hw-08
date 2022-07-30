@@ -1,0 +1,15 @@
+.contact-form {
+  height: 100%;
+  display: inline-block;
+
+  &-wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-form-group {
+  display: block;
+  position: relative;
+
+  margin-bottom: 10px;
+}

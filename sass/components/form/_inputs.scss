@@ -1,0 +1,19 @@
+.contact-form-input {
+  width: 448px;
+  height: 40px;
+  padding-right: 5px;
+  padding-left: 42px;
+  background-color: transparent;
+  outline: transparent;
+
+  color: var(--secondary-txt-cl);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color var(--anim);
+
+  &:focus {
+    border-color: var(--btn-cl);
+  }
+}

@@ -1,0 +1,14 @@
+.contact-form-icon {
+  position: absolute;
+  top: 11px;
+  bottom: 11px;
+  left: 12px;
+  right: 12px;
+  transform: translateY(100%);
+
+  transition: fill var(--anim);
+
+  .contact-form-input:focus + & {
+    fill: var(--btn-cl);
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  /* fonts */
+  --main-font: "Roboto";
+  --secondary-font: "Raleway";
+
+  /* text colors */
+  --main-txt-cl: #757575;
+  --secondary-txt-cl: #212121;
+  --dark-txt-cl: #000000;
+  --white-txt-cl: #ffffff;
+  --accent-txt-cl: #2196f3;
+
+  /* bg colors */
+  --main-bg-cl: #ffffff;
+  --grey-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+  --btn-cl: #2196f3;
+  --btn-active-cl: #188ce8;
+
+  /* others */
+  --items: 4;
+  --indent: 30px;
+
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
