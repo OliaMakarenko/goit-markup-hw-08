@@ -1,8 +1,40 @@
 .clients {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     margin-bottom: 50px;
+  }
+
+  &__list {
+    --items: 2;
+
+    @media screen and (min-width: 768px) {
+      --items: 3;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 6;
+    }
+  }
+}
+
+.clients__title {
+  font-size: 28px;
+  line-height: 1.18;
+
+  text-align: center;
+
+  color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.14;
   }
 }
 
@@ -13,7 +45,7 @@
 }
 
 .clients__iconfill {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 

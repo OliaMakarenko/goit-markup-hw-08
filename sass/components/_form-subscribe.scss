@@ -1,15 +1,26 @@
 .form-wrapper {
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
   &__text {
-    display: inline-block;
+    display: block;
 
     margin-bottom: 20px;
+    text-align: center;
 
     line-height: 1.14;
     text-transform: uppercase;
 
     color: var(--white-txt-cl);
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 }
 
@@ -17,8 +28,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  gap: 12px;
+  gap: 20px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 12px;
+  }
 
   &__button {
     display: flex;
@@ -31,7 +48,7 @@
 }
 
 .form-subscribe__email {
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   padding: 15px 16px;
@@ -52,6 +69,10 @@
   color: var(--white-txt-cl);
 
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;

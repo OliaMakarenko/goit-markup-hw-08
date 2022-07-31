@@ -1,10 +1,32 @@
 .team {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   background-color: var(--grey-bg-cl);
 
+  &__list {
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+      --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 4;
+    }
+  }
+
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -42,10 +64,7 @@
 .social-media {
   display: flex;
   justify-content: center;
-
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
+  gap: 10px;
 }
 
 .social-media__link {
