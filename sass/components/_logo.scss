@@ -22,7 +22,18 @@
 }
 
 .header__logo {
+  // для компа прибрать паддінг
+  padding: 16px 0px;
   color: var(--dark-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   padding: 24px;
+  //   padding-bottom: 25px;
+  // }
 
   &--accent {
     color: var(--accent-txt-cl);

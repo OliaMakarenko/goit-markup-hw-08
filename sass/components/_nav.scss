@@ -8,6 +8,20 @@
   }
 }
 
+.nav__list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      margin-left: 93px;
+    }
+  }
+}
+
 .nav__item {
   margin-right: 50px;
 

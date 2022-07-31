@@ -28,12 +28,64 @@
   <body data-body>
     <!-- Section Header  -->
 
-    <!-- <header class="header">
+    <header class="header" data-header>
       <div class="header__wrapper container">
         <nav class="nav">
           <a class="logo header__logo link" lang="en" href="./index.html"
             ><span class="header__logo--accent">Web</span>Studio</a
           >
+
+          <button type="button" class="mobile-menu-btn" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
+              <use
+                class="mobile-menu-burger"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+              <use
+                class="mobile-menu-close"
+                href="./images/icons.svg#menu-close"
+              ></use>
+            </svg>
+          </button>
+          <!-- Мобільне меню -->
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu-nav list">
+              <li class="mobile-menu-nav-item">
+                <a class="link current" href="">Студия </a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="link" href="">Портфолио</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="link" href="">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-contacts list">
+              <li class="mobile-menu-contacts-item">
+                <a class="link accent" href=""> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a class="link" href="">info@devstudio.com</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-socials list">
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href=""> Instagram </a>
+              </li>
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link nav__link--current link" href="./index.html"
@@ -70,18 +122,18 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <!-- Section Unique  content -->
 
     <main>
       <!-- Section Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="button hero__button" type="button" data-modal-open>
             Заказать услугу
-          </button> -->
+          </button>
       <!-- Модальне вікно -->
       <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -643,7 +695,7 @@
     </main>
     <!-- Section Footer -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="fotter__contacts">
@@ -754,7 +806,8 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
