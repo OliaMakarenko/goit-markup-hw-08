@@ -1,11 +1,25 @@
 .works-examples {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container-wrk-exmpl {
   background-color: var(--main-bg-cl);
-
+  --items: 1;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    --items: 3;
+  }
 }
 
 .work-exmpl-link {
@@ -30,6 +44,19 @@
 
   border: 1px solid #eeeeee;
   border-top: 0px;
+}
+
+.examples-text-special {
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 24px;
+  }
 }
 
 .title-wrk-exmpl {

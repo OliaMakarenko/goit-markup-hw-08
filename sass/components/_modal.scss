@@ -7,7 +7,7 @@
 
   transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
+  width: 450px;
 
   background-color: #ffffff;
 
@@ -18,6 +18,10 @@
 
   transition: transform var(--anim);
 
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+
   &-text {
     display: block;
 
@@ -25,7 +29,11 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
     text-align: center;
 
     color: var(--secondary-txt-cl);
@@ -55,8 +63,11 @@
 
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    fill: var(--btn-cl);
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    &:hover,
+    &:focus {
+      fill: var(--btn-cl);
+    }
   }
 }

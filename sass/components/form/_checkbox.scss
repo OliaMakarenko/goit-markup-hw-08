@@ -25,10 +25,24 @@
 }
 
 .form-checkbox-agreement {
+  display: inline;
   user-select: none;
+  font-size: 12px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   &-link {
     text-decoration-line: underline;
-
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--accent-txt-cl);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
