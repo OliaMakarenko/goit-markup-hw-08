@@ -45,14 +45,15 @@
     color: var(--main-txt-cl);
 
     fill: #757575;
+    @media screen and (min-width: 768px) {
+      transition: color var(--anim), fill var(--anim);
 
-    transition: color var(--anim), fill var(--anim);
+      &:hover,
+      &:focus {
+        color: var(--accent-txt-cl);
 
-    & :hover,
-    &:focus {
-      color: var(--accent-txt-cl);
-
-      fill: var(--accent-txt-cl);
+        fill: var(--accent-txt-cl);
+      }
     }
   }
 }
