@@ -1,13 +1,16 @@
 .modal {
   padding: 40px;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  @media screen and (max-height: 608px) {
+    height: 90vh;
+  }
 
   top: 50%;
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
-
-  max-width: 450px;
 
   background-color: #ffffff;
 

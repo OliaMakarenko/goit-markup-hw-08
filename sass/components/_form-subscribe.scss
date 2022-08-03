@@ -25,14 +25,12 @@
 }
 
 .form-subscribe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  gap: 20px;
+  width: 100%;
 
   @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: row;
     gap: 12px;
   }
@@ -48,7 +46,8 @@
 }
 
 .form-subscribe__email {
-  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
 
   height: 50px;
 
@@ -71,17 +70,39 @@
 
   cursor: pointer;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 358px;
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      min-width: 358px;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 
-  &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
+  .form-wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
 
-    display: flex;
-    align-items: center;
-
-    color: rgba(255, 255, 255, 0.6);
+      width: 100%;
+    }
   }
 }

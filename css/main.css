@@ -190,9 +190,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.social-media__item:not(:last-child) {
-  margin-right: 10px;
-}
 
 .social-media__link {
   display: -webkit-box;
@@ -295,23 +292,19 @@ img {
 }
 
 .form-subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .form-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -334,7 +327,8 @@ img {
 }
 
 .form-subscribe__email {
-  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
   height: 50px;
   padding: 15px 16px;
   background-color: transparent;
@@ -354,55 +348,88 @@ img {
   color: var(--white-txt-cl);
   cursor: pointer;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .form-subscribe__email {
-    max-width: 358px;
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-.form-subscribe__email::-webkit-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .form-subscribe__email {
+    min-width: 358px;
+  }
 }
-.form-subscribe__email::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+@media screen and (min-width: 768px) {
+  .form-subscribe__email::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .form-subscribe__email::-moz-placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .form-subscribe__email:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .form-subscribe__email::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .form-subscribe__email::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
-.form-subscribe__email:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+@media screen and (min-width: 768px) {
+  .form-subscribe__email .form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+  }
 }
-.form-subscribe__email::-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  color: rgba(255, 255, 255, 0.6);
-}
-.form-subscribe__email::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+@media screen and (min-width: 1200px) {
+  .form-subscribe__email .form-wrapper {
+    display: block;
+    width: 100%;
+  }
 }
 
 .form-btn {
@@ -525,7 +552,7 @@ img {
 }
 
 .contact-form-input {
-  width: 370px;
+  width: 100%;
   height: 40px;
   padding-right: 5px;
   padding-left: 42px;
@@ -643,7 +670,8 @@ img {
 
 .modal {
   padding: 40px;
-  position: absolute;
+  position: relative;
+  width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1399,33 +1427,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 768px) {
-  .footer__wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1441,6 +1448,21 @@ img {
     margin-bottom: 0;
     margin-right: 70px;
     text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__desctop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
