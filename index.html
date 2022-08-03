@@ -22,7 +22,6 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body data-body>
@@ -292,33 +291,65 @@
           <h2 class="section-title what-do__title">Чем мы занимаемся</h2>
           <ul class="what-do__list list">
             <li class="what-do__item">
-              <img
-                class="img"
-                src="./images/boxes/box-1.jpg"
-                alt="Разработка сайта"
-                width="370"
-                height="294"
-              />
+              <!-- Тег picture -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/boxes/box-1.jpg    1x,
+                    ./images/boxes/box-1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img"
+                  src="./images/boxes/box-1.jpg"
+                  alt="Разработка сайта"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="what-do__desc">Десктопные приложения</p>
             </li>
             <li class="what-do__item">
-              <img
-                class="img"
-                src="./images/boxes/box-2.jpg"
-                alt="Адаптивность сайта"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/boxes/box-2.jpg    1x,
+                    ./images/boxes/box-2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img"
+                  src="./images/boxes/box-2.jpg"
+                  alt="Адаптивность сайта"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="what-do__desc">Мобильные приложения</p>
             </li>
             <li class="what-do__item">
-              <img
-                class="img"
-                src="./images/boxes/box-3.jpg"
-                alt="Дизайн сайта"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/boxes/box-3.jpg    1x,
+                    ./images/boxes/box-3@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  class="img"
+                  src="./images/boxes/box-3.jpg"
+                  alt="Дизайн сайта"
+                  width="370"
+                  height="294"
+              /></picture>
+
               <p class="what-do__desc">Дизайнерские решения</p>
             </li>
           </ul>
@@ -332,13 +363,48 @@
           <h2 class="section-title team__title">Наша команда</h2>
           <ul class="team__list card-set list">
             <li class="team__item card-set__item">
-              <img
-                class="team__avatar"
-                src="./images/team/member-1.jpg"
-                alt="Член команды 1"
-                width="270"
-                height="260"
-              />
+              <!-- Тег picture -->
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-1_sm.jpg    1x,
+                    ./images/team/member-1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-1_md.jpg    1x,
+                    ./images/team/member-1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-1_lg.jpg    1x,
+                    ./images/team/member-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__avatar"
+                  src="./images/team/member-1_sm.jpg"
+                  alt="Член команды 1"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -400,13 +466,48 @@
             </li>
 
             <li class="team__item card-set__item">
-              <img
-                class="team__avatar"
-                src="./images/team/member-2.jpg"
-                alt="Член команды 2"
-                width="270"
-                height="260"
-              />
+              <!-- Тег picture -->
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-2_sm.jpg    1x,
+                    ./images/team/member-2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-2_md.jpg    1x,
+                    ./images/team/member-2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-2_lg.jpg    1x,
+                    ./images/team/member-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__avatar"
+                  src="./images/team/member-2_sm.jpg"
+                  alt="Член команды 2"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -468,13 +569,48 @@
             </li>
 
             <li class="team__item card-set__item">
-              <img
-                class="team__avatar"
-                src="./images/team/member-3.jpg"
-                alt="Член команды 3"
-                width="270"
-                height="260"
-              />
+              <!-- Тег picture -->
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-3_sm.jpg    1x,
+                    ./images/team/member-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-3_md.jpg    1x,
+                    ./images/team/member-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-3_lg.jpg    1x,
+                    ./images/team/member-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__avatar"
+                  src="./images/team/member-3_sm.jpg"
+                  alt="Член команды 3"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -536,13 +672,48 @@
             </li>
 
             <li class="team__item card-set__item">
-              <img
-                class="team__avatar"
-                src="./images/team/member-4.jpg"
-                alt="Член команды 4"
-                width="270"
-                height="260"
-              />
+              <!-- Тег picture -->
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/member-4_sm.jpg    1x,
+                    ./images/team/member-4_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/member-4_md.jpg    1x,
+                    ./images/team/member-4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/member-4_lg.jpg    1x,
+                    ./images/team/member-4_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__avatar"
+                  src="./images/team/member-4_sm.jpg"
+                  alt="Член команды 4"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>

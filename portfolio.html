@@ -21,7 +21,6 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -161,12 +160,47 @@
                 aria-label="пример веб-сайта"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-1.jpg"
-                    alt="Проект 1"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-1_sm.jpg        1x,
+                        ./images/projects/project-1_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-1_md.jpg    1x,
+                        ./images/projects/project-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-1.jpg    1x,
+                        ./images/projects/project-1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-1_sm.jpg "
+                      alt="Проект 1"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -192,12 +226,46 @@
                 aria-label="пример дизайна"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-2.jpg"
-                    alt="Проект 2"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-2_sm.jpg        1x,
+                        ./images/projects/project-2_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-2_md.jpg    1x,
+                        ./images/projects/project-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-2.jpg    1x,
+                        ./images/projects/project-2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-2_sm.jpg "
+                      alt="Проект 2"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -224,12 +292,46 @@
                 aria-label="пример приложения"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-3.jpg"
-                    alt="Проект 3"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-3_sm.jpg        1x,
+                        ./images/projects/project-3_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-3_md.jpg    1x,
+                        ./images/projects/project-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-3.jpg    1x,
+                        ./images/projects/project-3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-3_sm.jpg "
+                      alt="Проект 3"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -256,12 +358,46 @@
                 aria-label="пример маркетинга"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-4.jpg"
-                    alt="Проект 4"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-4_sm.jpg        1x,
+                        ./images/projects/project-4_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-4_md.jpg    1x,
+                        ./images/projects/project-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-4.jpg    1x,
+                        ./images/projects/project-4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-4_sm.jpg "
+                      alt="Проект 1"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -289,12 +425,46 @@
                 aria-label="пример приложения"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-5.jpg"
-                    alt="Проект 5"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-5_sm.jpg        1x,
+                        ./images/projects/project-5_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-5_md.jpg    1x,
+                        ./images/projects/project-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-5.jpg    1x,
+                        ./images/projects/project-5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-5_sm.jpg "
+                      alt="Проект 5"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -322,12 +492,46 @@
                 aria-label="пример веб-сайта"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-6.jpg"
-                    alt="Проект 6 "
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-6_sm.jpg        1x,
+                        ./images/projects/project-6_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-6_md.jpg    1x,
+                        ./images/projects/project-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-6.jpg    1x,
+                        ./images/projects/project-6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-6_sm.jpg "
+                      alt="Проект 6"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -355,12 +559,46 @@
                 aria-label="пример дизайна"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-7.jpg"
-                    alt="Проект 7"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-7_sm.jpg        1x,
+                        ./images/projects/project-7_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-7_md.jpg    1x,
+                        ./images/projects/project-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-7.jpg    1x,
+                        ./images/projects/project-7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-7_sm.jpg "
+                      alt="Проект 7"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -387,12 +625,46 @@
                 aria-label="пример маркетинга"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-8.jpg"
-                    alt="Проект 8"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-8_sm.jpg        1x,
+                        ./images/projects/project-8_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-8_md.jpg    1x,
+                        ./images/projects/project-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-8.jpg    1x,
+                        ./images/projects/project-8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-8_sm.jpg "
+                      alt="Проект 8"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -419,12 +691,46 @@
                 aria-label="пример приложения"
               >
                 <div class="thumb-work-exmpl">
-                  <img
-                    src="./images/projects/project-9.jpg"
-                    alt="Проект 9"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-9_sm.jpg        1x,
+                        ./images/projects/project-9_sm.jpg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-9_md.jpg    1x,
+                        ./images/projects/project-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/project-9.jpg    1x,
+                        ./images/projects/project-9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/projects/project-9_sm.jpg "
+                      alt="Проект 9"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
